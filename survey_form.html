@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="./styles/survey.css">
+    </head>
+    
+    <body>
+       
+        <h1 id="title">
+            Please Survey my Survey Form &#128540;
+        </h1>
+        <p id="description">
+            How have you found it? I would very much appreciate your time in helping me improve my coding and design skills!
+        </p>
+        
+        <section class="form-body">
+            <h3>
+                Please fill in all fields marked <span>*</span>
+            </h3>
+            
+            <form id="survey-form">
+                <p>
+                    <label id="name-label">Name <span>*</span></label><br>
+                    <input type="text" id="name" name="name" placeholder="John Smith" required />
+                </p>
+                <p>
+                    <label id="email-label">Email <span>*</span></label><br>
+                    <input type="text" id="email" name="email" placeholder="someone@something.com" required />
+                </p>
+                <p>
+                    <label id="number-label">Age <span>*</span></label><br>
+                    <input type="number" id="number" name="age" placeholder="Age" min="13" max="130" required />
+                </p>
+                <p>
+                    How would you describe what you do?<br>
+                    <select id="dropdown" name="occupation" required="">
+                        <option disabled value="">Please choose from below:</option>
+                        <option value="full-time employment">full-time employment</option>
+                        <option value="student">student</option>
+                        <option value="unemployed">unemployed</option>
+                        <option value="jedi">jedi</option>
+                        <option value="programmer">programmer</option>
+                        <option value="prefer not to say">prefer not to say</option>
+                    </select>
+                </p>
+                <p>
+                    How would you describe the styling of this form?
+                </p>
+                <p>
+                    Please choose <strong>one</strong> of the following options:
+                </p>
+                
+                <input type="radio" name="page-rating" id="Functional" class="radio-control" checked>
+                <label for="Functional">Functional</label><br>
+                <input type="radio" name="page-rating" id="Stylish" class="radio-control">
+                <label for="Stylish">Stylish</label><br>
+                <input type="radio" name="page-rating" id="Plain_Jane" class="radio-control">
+                <label for="Plane_Jane">Plane Jane</label><br>
+                <p>
+                    What elements do you think require the most improvement?
+                </p>
+                <input type="checkbox" value="title" class="check-control">Titles<br>
+                <input type="checkbox" value="colors" class="check-control">Colors used<br>
+                <input type="checkbox" value="layout" class="check-control">Layout<br>
+                <input type="checkbox" value="info" class="check-control">Information / Form content<br>
+                <input type="checkbox" value="all" class="check-control">Page just needs a complete redo<br>
+                <p>
+                    Any additional comments? (Up to 500 characters)
+                </p>
+                <textarea placeholder="Use this space for additional comments..." maxlength="500"></textarea><br>
+                <input type="reset" value="Clear Message" class="msg-button">
+                <input type="submit" value="Submit" class="msg-button" onclick="checkAge()"><br> 
+            </form>
+            
+        </section>
+        
+        <footer>
+           
+            <script>
+                document.write('Copyright &copy; Ryan Hadley &#x264F; ', new Date().getFullYear());
+                document.write("<br/>", ' Last modified ' + document.lastModified);
+                
+                function checkAge() {
+                const age = document.getElementById("number").value;
+                if (age < 13) {
+                    alert("Please confirm that you are 13 or over");
+                } else if (age >= 100) {
+                    alert("Wow, congratulations on making it to over 100!");
+                    }
+                }
+            </script>
+            
+        </footer>
+    </body>
+</html>

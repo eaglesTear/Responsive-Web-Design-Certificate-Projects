@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    background-color: lightsteelblue;
+    font-size: 1.4rem;
+    line-height: 1.4em;
+}
+
+header {
+    font-size: 2rem;
+}
+
+.lower-title {
+    margin-top: 3rem;
+}
+
+#navbar {
+    width: 25%;
+    position: fixed;
+    height: 100vh;
+    float: left;
+    overflow: scroll;
+}
+
+#navbar header {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+/* DOMINANT COLOR OF THE RUBY LOGO */
+span {
+    color: rgb(162, 18, 7);
+}
+
+img {
+    max-width: 2.2rem;
+    height: auto;
+    margin-left: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#navbar a {
+    background-color: lightslategray;
+    color: rebeccapurple;
+    font-weight: 700;
+    padding: 20px;
+    border: 1px solid #000;
+    display: block;
+}
+
+#navbar a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#main-doc {
+    width: 70%;
+    float: right;
+    margin-right: 1.5rem;
+    padding-left: 0.7rem;
+}
+
+code {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.contents-list {
+    text-align: center;
+}
+
+footer {
+    background-color: #000;
+    width: calc(70% + 2.2rem);
+    /* EXTEND FOOTER ACROSS LENGTH OF MAIN SECTION ONLY, PLUS MAIN SECT. PADDING */
+    float: right;
+    color: #fff;
+    text-align: center;
+    font-size: smaller;
+    letter-spacing: 0.2px;
+    border-radius: 5px;
+    clear: both;
+}
+
+/* STACK ALL ELEMENTS CLEARLY ON TABLET & MOBILE DEVICES */
+@media (max-width: 768px) {
+
+    #navbar,
+    #main-doc {
+        float: none;
+        width: 100%;
+        position: static;
+        padding: 1.2rem;
+    }
+
+    #navbar header {
+        margin-bottom: 1.5rem;
+    }
+
+    header {
+        font-size: 1.8rem;
+    }
+
+    body {
+        font-size: 1.1rem;
+    }
+
+    /* FOOTER NOW FREE TO SPAN ENTIRE PAGE, UNHINDERED BY FIXED NAVBAR */
+    footer {
+        width: 100%;
+    }
+}

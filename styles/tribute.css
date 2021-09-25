@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Tangerine&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header-bg {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+h2 {
+    margin: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h1, h3 {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+figure {
+    margin: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+#img-div {
+    text-align: center;
+}
+
+blockquote {
+    margin: 5rem auto;
+    max-width: 450px;
+    letter-spacing: 0.1em;
+    border-left: 10px solid #903;
+    padding-left: 35px;
+    padding-right: 1.5rem;
+} 
+
+section {
+    max-width: 1000px;
+     /* WORKS HERE AS WIDTH IS SPECIFIED. TEXT ALIGN WILL NOT IF SPECIFIED */
+    margin: auto;
+    padding: 2rem;
+}
+
+p, li {
+    text-align: justify;
+}
+
+#tribute-info:first-letter {
+    color: #903;
+    font-weight: 900;
+    float: left;
+    font-family: Georgia, serif;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+ul, li {
+    margin: 1.5em;
+}
+
+.reduce-text-measure {
+    max-width: 800px;
+    margin: auto;
+}
+
+.wiki-link-center {
+    text-align: center;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-family: 'Tangerine', cursive, Arial, sans-serif;
+    font-size: x-large;
+    letter-spacing: 0.2px;
+}

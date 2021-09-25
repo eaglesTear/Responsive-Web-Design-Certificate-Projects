@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Tangerine&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('../images/code.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+h1,
+#description {
+    color: ghostwhite;
+    text-align: center;
+    padding: 1rem;
+}
+
+p {
+    padding: 20px;
+}
+
+#description {
+    color: ghostwhite;
+    font-size: 22px;
+}
+
+section {
+    max-width: 800px;
+}
+
+span {
+    color: red;
+}
+
+.form-body {
+    margin: 3em auto 5em auto;
+    background-color: teal;
+    border-radius: 25px;
+    padding: 1rem;
+    width: 80%;
+}
+
+input,
+textarea {
+    max-width: 400px;
+    height: 60px;
+    padding: 20px;
+    border-radius: 25px;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 500px;
+    height: 200px;
+    max-width: 700px;
+    margin: 2em;
+    padding: 1rem;
+}
+
+select {
+    max-width: 400px;
+    height: 70px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+input,
+textarea,
+select,
+.msg-button {
+    width: 85%;
+    margin-top: 1rem;
+}
+
+.radio-control {
+    height: 15px;
+    width: 15px;
+    margin: 20px;
+}
+
+.check-control {
+    height: 20px;
+    width: 20px;
+    margin: 20px;
+}
+
+.msg-button {
+    margin: 2em;
+    max-width: 700px;
+    background-color: orange;
+    border: 2px solid #000;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.msg-button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+footer {
+    background-color: darkcyan;
+    text-align: center;
+    font-family: 'Tangerine', cursive, Arial, sans-serif;
+    font-size: xx-large;
+    letter-spacing: 0.2px;
+    opacity: 0.9;
+}
+
+@media (max-width: 400px) {
+    
+    .form-body {
+        width: 90%;
+    }
+}

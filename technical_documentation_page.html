@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Technical Documentation Page - Ruby</title>
+        <link rel="stylesheet" href="./styles/technical.css">
+    </head>
+    
+    <body>
+       
+        <nav id="navbar">
+            <header>
+                Learn <span>Ruby</span>
+                <img src="images/ruby.png" alt="Ruby Logo" />
+            </header>
+            <a href="#What_is_Ruby?" class="nav-link">What is Ruby?</a>
+            <a href="#Installing_Ruby" class="nav-link">Installing Ruby</a>
+            <a href="#String_Literals" class="nav-link">String Literals</a>
+            <a href="#Program_Flow" class="nav-link">Program Flow</a>
+            <a href="#Inputs_and_Outputs" class="nav-link">Inputs and Outputs</a>
+            <a href="#Objects" class="nav-link">Objects</a>
+            <a href="#Classes" class="nav-link">Classes</a>
+            <a href="#Numbers" class="nav-link">Numbers</a>
+            <a href="#Arrays" class="nav-link">Arrays</a>
+            <a href="#Functions" class="nav-link">Functions</a>
+            <a href="#Ruby_on_Rails" class="nav-link">Ruby-on-Rails</a>
+            <a href="#References" class="nav-link">References</a>
+        </nav>
+        
+        <main id="main-doc">
+           
+            <section id="What_is_Ruby?" class="main-section">
+                <header class="lower-title">What is <span>Ruby</span>?</header>
+                <article>
+                    <p> 
+                        Ruby is an object-oriented scripting language originally developed by Yukihiro Matsumoto (also known as Matz). The  main website of the Ruby programming language is ruby-lang.org. Development began in February 1993 and the first alpha version of Ruby was released in December 1994. It was developed to be an alternative to scripting languages such as Perl and Python. Ruby borrows heavily from Perl and the class library is essentially an object-oriented reorganization of Perl's functionality. Ruby also borrows from Lisp and Smalltalk. While Ruby does not borrow many features from Python, reading the code for Python helped Matz develop Ruby.
+                    </p>
+                    <header id="Installing_Ruby">Installing <span>Ruby</span></header>
+                    <p>
+                        MacOS comes with Ruby already installed. Most Linux distributions either come with Ruby preinstalled or allow you to easily install Ruby from the distribution's repository of free software. You can also download and install Ruby on Windows. The more technically adept can download the Ruby source code[2] and compile it for most operating systems, including Unix, DOS, BeOS, OS/2, Windows, and Linux.
+                    </p>
+                    <h4>Contents</h4>
+                    <ol class="contents-list">
+                        <li>String Literals</li>
+                        <li>Program Flow</li>
+                        <li>Input and Output</li>
+                        <li>Objects </li>
+                        <li>Classes</li>
+                        <li>Numbers</li>
+                        <li>Arrays</li>
+                        <li>Functions</li>
+                        <li>Ruby on Rails</li>
+                        <li>References</li>
+                    </ol>
+                </article>
+            </section>
+            
+            <section id="String_Literals" class="main-section">
+                <header>String Literals</header>
+                <article>
+                    <p>One way to create a String is to use single or double quotes inside a Ruby program to create what is called a string literal. We've already done this with our "hello world" program. A quick update to our code shows the use of both single and double quotes.
+                    </p>
+                    <p>
+                        Try it out!
+                    </p>
+                    <code>puts 'Hello world'</code>
+                </article>
+            </section>
+            
+            <section id="Program_Flow" class="main-section">
+                <header>Program Flow</header>
+                <article>
+                    <p>
+                        Ruby contains methods to implement conditional branching, just like any other OOP language.
+                    </p>
+                    <p>Ruby includes a pretty standard set of looping and branching constructs: if, while and case.
+                        For example, here's if in action: 
+                    </p>
+                    <code>
+                        a = 10 * rand
+                        if a &lt; 5
+                        puts "#{a} less than 5"
+                        elsif a > 7
+                        puts "#{a} greater than 7"
+                        else
+                        puts "Cheese sandwich!"
+                        end
+                    </code>
+                </article>
+            </section>
+            
+            <section id="Input_and_Output" class="main-section">
+                <header>Input and Output</header>
+                <article>
+                    <p>Ruby provides what at first sight looks like two separate sets of I/O routines. The first is the simple interface---we've been using it pretty much exclusively so far. 
+                    </p>
+                    <p>
+                        Have a go!
+                    </p>
+                    <code>print "Enter your name: "
+                        name = gets
+                    </code>
+                </article>
+            </section>
+            
+            <section id="Objects" class="main-section">
+                <header>Objects</header>
+                <article>
+                    <p>After months of work, our highly paid Research and Development folks have determined that our jukebox needs songs. So it seems like a good idea to start off by setting up a Ruby class that represents things that are songs. We know that a real song has a name, an artist, and a duration, so we'll want to make sure that the song objects in our program do, too. 
+                    </p>
+                    <p>initialize is a special method in Ruby programs. When you call Song.new to create a new Song object, Ruby creates an uninitialized object and then calls that object's initialize method, passing in any parameters that were passed to new. This gives you a chance to write code that sets up your object's state. 
+                    </p>
+                    <code>class Song
+                        def initialize(name, artist, duration)
+                        @name     = name
+                        @artist   = artist
+                        @duration = duration
+                        end
+                    end
+                    </code>
+                </article>
+            </section>
+            
+            <section id="Classes" class="main-section">
+                <header>Classes</header>
+                <article>
+                    <p>Ruby is a perfect Object Oriented Programming Language. The features of the object-oriented programming language include −
+
+                        Data Encapsulation
+                        Data Abstraction
+                        Polymorphism
+                        Inheritance
+                    
+                    These features have been discussed in the chapter Object Oriented Ruby.
+                    
+                    An object-oriented program involves classes and objects. A class is the blueprint from which individual objects are created. In object-oriented terms, we say that your bicycle is an instance of the class of objects known as bicycles.
+                    
+                    Take the example of any vehicle. It comprises wheels, horsepower, and fuel or gas tank capacity. These characteristics form the data members of the class Vehicle. You can differentiate one vehicle from the other with the help of these characteristics.
+                    
+                    A vehicle can also have certain functions, such as halting, driving, and speeding. Even these functions form the data members of the class Vehicle. You can, therefore, define a class as a combination of characteristics and functions.
+                    </p>
+                    <code>
+                        Class Vehicle {
+
+                        Number no_of_wheels
+                        Number horsepower
+                        Characters type_of_tank
+                        Number Capacity
+                        Function speeding {
+                        }
+                        
+                        Function driving {
+                        }
+                        
+                        Function halting {
+                        }
+                    }
+                    </code>
+                </article>
+            </section>
+            
+            <section id="Numbers" class="main-section">
+                <header>Numbers</header>
+                <article>
+                    <p>Under the hood, for reasons that are mostly technical, there are actually different kinds of numbers:
+                        For example there are integer numbers (those without a fraction, i.e. a dot and decimal places), and depending on their size there are two kinds of them. For floating point numbers there are even more. Unless you are super curious, you can perfectly ignore all of that for now, and just think of numbers as numbers.
+                        However, when you do calculations with numbers, keep in mind that integer numbers (“integers”) and decimal point numbers (floating point numbers, aka “floats”) are different.
+                        If you do a calculation that uses integer number you’ll always get an integer back.
+                    </p>
+                </article>
+            </section>
+            
+            <section id="Arrays" class="main-section">
+                <header>Arrays</header>
+                <article>
+                    <p>Creating an Array
+                        To create an array in a Ruby program, use square brackets: ([]), and separate the values you want to store with commas.
+                        For example, create an array of sharks and assign it to a variable, like this:
+                    </p>
+                    <code>sharks = ["Hammerhead", "Great White", "Tiger"]</code>
+                </article>
+            </section>
+            
+            <section id="Functions" class="main-section">
+                <header>Functions</header>
+                <article>
+                    <p>The Ruby language makes it easy to create functions.
+                        Function Syntax:
+                        <code>
+                            def functionname(variable)
+                            return (value)
+                            end
+                        </code>
+                    </p>
+                </article>
+            </section>
+            
+            <section id="Ruby_on_Rails" class="main-section">
+                <header><span>Ruby</span> on Rails</header>
+                <article>
+                    <p>
+                        Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages. It encourages and facilitates the use of web standards such as JSON or XML for data transfer, HTML, CSS and JavaScript for user interfacing. In addition to MVC, Rails emphasizes the use of other well-known software engineering patterns and paradigms, including convention over configuration (CoC), don't repeat yourself (DRY), and the active record pattern.[4]
+
+                        Ruby on Rails' emergence in the 2000s greatly influenced web app development, through innovative features such as seamless database table creations, migrations, and scaffolding of views to enable rapid application development. Ruby on Rails' influence on other web frameworks remains apparent today, with many frameworks in other languages borrowing its ideas, including Django in Python, Catalyst in Perl, Laravel and CakePHP in PHP, Phoenix in Elixir, Play in Scala, and Sails.js in Node.js. 
+                    </p>
+                </article>
+            </section>
+            
+            <section id="References" class="main-section">
+                <header>References</header>
+                <article>
+                    <p>
+                        Official API Documentation is found <a href="https://docs.ruby-lang.org/en/">here.</a>
+                    </p>
+                </article>
+            </section>
+            
+        </main>
+        
+        <footer>
+            <script>
+                document.write('Built and styled from the ground up by Ryan Hadley &#x264F; ', new Date().getFullYear());
+                document.write("<br/>", ' Last modified ' + document.lastModified);
+            </script>
+        </footer>
+        
+    </body>
+</html>

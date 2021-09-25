@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+* {
+    margin: 0rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-image: linear-gradient(to top, orange, crimson);
+    background-image: -webkit-linear-gradient(to right, orange, crimson);
+    /* OLDER VERSIONS OF CHROME, SAFARI */
+    padding: 10px 25px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Metal Mania', cursive;
+    letter-spacing: 1px;
+}
+
+img {
+    margin: 0.3rem 0;
+    height: 250px;
+    border-radius: 8px;
+}
+
+#header-img {
+    height: 80px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+header a,
+footer a {
+    text-decoration: none;
+}
+
+nav a {
+    padding: 20px 20px;
+}
+
+a:link {
+    color: gold;
+    font-size: large;
+    font-weight: 900;
+}
+
+a:visited {
+    color: royalblue;
+}
+
+a:focus,
+a:hover {
+    background-color: darkred;
+    border-radius: 5px;
+}
+
+a:active {
+    color: darkmagenta;
+}
+
+#join-us {
+    margin-top: 12rem;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 275px;
+    height: 40px;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+#submit {
+    text-align: center;
+    width: 150px;
+    background-color: orange;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: darkorange;
+}
+
+#form a:hover {
+    background-color: unset;
+}
+
+section {
+    margin: 4em auto;
+    width: 700px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+}
+
+#our-services {
+    margin-top: 3em;
+    text-align: start;
+}
+
+.feature-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 100px;
+    font-size: 44px;
+    color: lightskyblue;
+}
+
+#deals {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tile-1,
+.tile-2,
+.tile-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% / 4);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 6px 12px rgba(0, 0, 0, 0.28);
+    border: 2px groove darkcyan;
+    margin: 2em;
+    transition: 0.8s;
+}
+
+.tile-1:hover,
+.tile-2:hover,
+.tile-3:hover {
+    transform: translateY(-30px);
+}
+
+.box-deal-name {
+    text-transform: uppercase;
+    background-color: #ddd;
+    width: 100%;
+    padding: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    margin: 10px 0;
+    width: 100px;
+    height: 50px;
+    border: 0;
+    padding: 5px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+    /* OLDER VERSIONS OF CHROME, SAFARI */
+    background-image: -webkit-linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+button:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+caption {
+    font-size: 2rem;
+    color: red;
+}
+
+table,
+th,
+td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: auto;
+    padding: 1em;
+}
+
+thead {
+    background-color: #f3f3f3;
+}
+
+tfoot {
+    color: red;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer {
+    background-image: linear-gradient(to right, orange, crimson);
+    background-image: -webkit-linear-gradient(to right, orange, crimson);
+    /* OLDER VERSIONS OF CHROME, SAFARI */
+    text-align: center;
+    margin-top: 1.5rem;
+    letter-spacing: 0.2px;
+    overflow: auto;
+    /* STOP BACKGROUND VANISHING DUE TO FLOAT */
+}
+
+footer ul li {
+    padding: 20px;
+}
+
+footer ul li a {
+    padding: 12px;
+}
+
+span {
+    float: right;
+    margin: 0 30px 8px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    
+    iframe {
+        width: 420px;
+    }
+
+    .tile-1:hover,
+    .tile-2:hover,
+    .tile-3:hover {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    
+    #deals {
+        flex-direction: column;
+    }
+
+    .tile-1,
+    .tile-2,
+    .tile-3 {
+        width: 300px;
+    }
+}
